@@ -1,17 +1,23 @@
-import _ from 'lodash';
-import printMe from './print.js';
-import './style.css'
+// import _ from 'lodash';
+// import printMe from './print.js';
+// import './style.css'
+import { cube } from './math.js';
 
 function component() {
     var element = document.createElement('div');
-    var btn = document.createElement('button');
+    // var btn = document.createElement('button');
 
-    element.innerHTML = _.join(['hello', 'webpack','hhh'], ' ');
+    // element.innerHTML = _.join(['hello', 'webpack','hhh'], ' ');
 
-    btn.innerHTML = 'Click me and check the console!';
-    btn.onclick = printMe;
+    // btn.innerHTML = 'Click me and check the console!';
+    // btn.onclick = printMe;
 
-    element.appendChild(btn);
+    // element.appendChild(btn);
+
+    element.innerHTML = [
+        'Hello webpack!',
+        '5 cubed js equal to ' + cube(5)
+    ].join('\n\n');
 
     return element;
 
