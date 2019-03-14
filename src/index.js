@@ -5,7 +5,7 @@ function component() {
     var element = document.createElement('div');
     var btn = document.createElement('button');
 
-    element.innerHTML = _.join(['hello', 'webpack','hhh','xxxddd'], ' ');
+    element.innerHTML = _.join(['hello', 'webpack','hhh','dddee'], ' ');
 
     btn.innerHTML = 'Click me and check the console!';
     btn.onclick = printMe;
