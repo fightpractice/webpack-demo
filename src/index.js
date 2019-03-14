@@ -2,6 +2,10 @@
 // import printMe from './print.js';
 // import './style.css'
 import { cube } from './math.js';
+console.log(process.env.NODE_ENV)
+if (process.env.NODE_ENV !== 'production') {
+    console.log('Looks like we are in development mode!')
+}
 
 function component() {
     var element = document.createElement('div');
